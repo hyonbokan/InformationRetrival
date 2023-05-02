@@ -36,10 +36,9 @@
 
 
 ## 3. Results of free text queries for ranked retrieval and comparison with Boolean retrieval 
-    The results of a ranked retrieval process using the term-at-a-time (TAAT) algorithm returned the top 10 documents ranked by their relevance to a given query, the table lists the rank, document ID, cosine similarity, and document score of each of the 10 documents.
+The results of a ranked retrieval process using the term-at-a-time (TAAT) algorithm returned the top 10 documents ranked by their relevance to a given query, the table lists the rank, document ID, cosine similarity, and document score of each of the 10 documents.
 
-    Query: |Ben June|
-
+Query: |Ben June|
 
 | Rank | Doc ID | Cosine Similarity | Document Score |
 |------|--------|-------------------|----------------|
@@ -56,10 +55,10 @@
 
     
 
-    The Boolean query AND result of "Ben June" returns a set of documents that contain both terms "Ben" and "June". The result is a set of document IDs \fbox{0, 298, 149, 407, 410}.
-    
-    On the other hand, the Taat retrieval result for the same query returns a ranked list of documents sorted in descending order of their similarity score. The list is \fbox{0, 149, 298, 407, 410, 17, 36, 66, 75, 85}.
-    
-    The Boolean query AND result returns a set of documents that strictly contain both terms "Ben" and "June". It is a precise result but may not include all relevant documents. The Taat retrieval result, however, returns a ranked list of documents based on their similarity scores, which takes into account the relevance of documents that contain either "Ben" or "June" or both. The Taat result may include more relevant documents but may also include irrelevant documents.
-    
-    Overall, Boolean retrieval provides a precise answer, but it may not include all relevant documents, while ranked retrieval techniques like Taat retrieval provide a more comprehensive answer, but it may include irrelevant documents as well.
+The Boolean query AND result of "Ben June" returns a set of documents that contain both terms "Ben" and "June". The result is a set of document IDs \fbox{0, 298, 149, 407, 410}.
+
+On the other hand, the Taat retrieval result for the same query returns a ranked list of documents sorted in descending order of their similarity score. The list is \fbox{0, 149, 298, 407, 410, 17, 36, 66, 75, 85}.
+
+The Boolean query AND result returns a set of documents that strictly contain both terms "Ben" and "June". It is a precise result but may not include all relevant documents. The Taat retrieval result, however, returns a ranked list of documents based on their similarity scores, which takes into account the relevance of documents that contain either "Ben" or "June" or both. The Taat result may include more relevant documents but may also include irrelevant documents.
+
+Overall, Boolean retrieval provides a precise answer, but it may not include all relevant documents, while ranked retrieval techniques like Taat retrieval provide a more comprehensive answer, but it may include irrelevant documents as well.
